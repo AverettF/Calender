@@ -1,0 +1,56 @@
+﻿@using WebApplication1.Data
+
+<div class="wordsofweek">
+    <div class="wordsofweek__content">
+        <div class="word1">
+            Mon
+        </div>
+        <div class="word2">
+            Tue
+        </div>
+        <div class="word3">
+            Wed
+        </div>
+        <div class="word4">
+            Thu
+        </div>
+        <div class="word5">
+            Fri
+        </div>
+        <div class="word6">
+            Sat
+        </div>
+        <div class="word7">
+            Sun
+        </div>
+    </div>
+</div>
+
+@*@typeparam TCalendare*@
+
+@*@for (int i = 0; i < 6; i++)
+{
+    <div class="week">
+        @for (int j = 0; j < 7; j++)
+        {
+            if (j < 5)
+            {
+                <div class="block__calendar">
+                    @table[i,j]
+                </div>
+            }
+                
+            else
+            {
+                <div class="block__calendar__weeknd">
+                    @table[i,j]
+                </div>
+            }
+        }
+    </div>
+}*@
+
+@code {
+    [Parameter] public RenderFragment Calendare { get; set; }
+    [Parameter] public RenderFragment CalendareWeekend { get; set; }
+}

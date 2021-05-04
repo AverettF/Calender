@@ -1,0 +1,30 @@
+﻿@namespace WebApplication1.Data
+
+    <div>
+
+        @for (int i = 0; i < 6; i++)
+        {
+            <div class="week">
+                @for (int j = 0; j < 7; j++)
+                {
+                    if (j < 5)
+                    {
+                        <div class="block__calendar">
+                            <text>@dat[i * 7 + j].Day</text>
+                        </div>
+                    }
+
+                    else
+                    {
+                        <div class="block__calendar__weeknd">
+                            @dat[i * 7 + j].Day
+                        </div>
+                    }
+                }
+            </div>
+        }
+    </div>
+
+    @code{
+        [Parameter] public Date[] dat { get; set; }
+    }
