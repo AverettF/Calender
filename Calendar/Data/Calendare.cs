@@ -178,12 +178,12 @@ namespace WebApplication1.Data
                             {
                                 virtualYear--;
                             }
-                            int l1 = Convert.ToInt32(DayMounths[vfor()]) - dat + a;
+                            int l1 = Convert.ToInt32(DayMounths[vfor() - 1]) - dat + a + 1;
                             string z1 = Convert.ToString(l1);
                             LeapYear(virtualYear);
                             Date[0, a] = new Date(z1,
                                 Convert.ToString(date.mounth - 1), Convert.ToString(virtualYear),
-                                DefineDayOfWeek(virtualYear, vfor(), Convert.ToInt32(DayMounths[vfor()]) - dat + a));
+                                DefineDayOfWeek(virtualYear, vfor(), Convert.ToInt32(DayMounths[vfor() - 1]) - dat + a + 1));
                         }
                         z = dat;
                         point = true;

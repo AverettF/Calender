@@ -293,3 +293,188 @@ form{
     width: 20px;
     height: 20px;
 }
+
+/*____________________________________________________________AddPopup*/
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+a, a:visited {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+input {
+    border: 1px solid #EAEAEA;
+    height: 38px;
+    width: 374px;
+}
+
+.form {
+    width: 512px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0 0 25px 25px;
+    transform: translate(0px, 0px);
+    transition: all 0.8s ease 0s
+}
+
+    .form:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+        .form:target .form {
+        }
+
+.form__content {
+    padding: 42px;
+    background-color: #fff;
+    width: 460px;
+    margin: 0 auto;
+}
+
+.heading__content {
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-close {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.e-mail__content {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.e-mail {
+    margin-bottom: 34px;
+}
+
+.password {
+    margin-bottom: 34px;
+}
+
+.repeat__password {
+    margin-bottom: 34px;
+}
+
+.nickname {
+    margin-bottom: 34px;
+}
+
+.nickname__content {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.password__content {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.repeat__password__content {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.registration {
+    text-align: center;
+    padding-top: 19px;
+}
+
+    .registration a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+.button__registration {
+    background-color: #aac6db;
+    height: 48px;
+    width: 376px;
+}
+input, button, textarea {
+    font-family: inherit;
+}
+
+    input::-ms-clear {
+        display: none;
+    }
+
+button {
+    cursor: pointer;
+}
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+a, a:visited {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
